@@ -1,5 +1,7 @@
 package io.github.kill00.sqlitemc;
 
+import io.github.kill00.sqlitemc.Data.DataTypeCheck;
+import io.github.kill00.sqlitemc.Data.DataTypeConvert;
 import org.bukkit.plugin.Plugin;
 
 import java.io.File;
@@ -347,6 +349,7 @@ public class slm {
      *
      * @param dbName database name
      * @param tableName table name
+     * @return list of data
      */
     public static DataTypeConvert get(String dbName, String tableName) {
         return new DataTypeConvert(dbName, tableName);
@@ -357,6 +360,7 @@ public class slm {
      *
      * @param dbName database name
      * @param tableName table name
+     * @return list of data
      */
     public static DataTypeCheck check(String dbName, String tableName) {
         return new DataTypeCheck(dbName, tableName);

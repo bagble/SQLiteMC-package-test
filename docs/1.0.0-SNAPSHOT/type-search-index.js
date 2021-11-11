@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"io.github.kill00.sqlitemc.Data","l":"DataTypeCheck"},{"p":"io.github.kill00.sqlitemc.Data","l":"DataTypeConvert"},{"p":"io.github.kill00.sqlitemc","l":"slm"}]

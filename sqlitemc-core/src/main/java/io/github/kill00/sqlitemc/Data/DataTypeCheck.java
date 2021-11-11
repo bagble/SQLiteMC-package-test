@@ -1,4 +1,4 @@
-package io.github.kill00.sqlitemc;
+package io.github.kill00.sqlitemc.Data;
 
 import java.util.List;
 import java.util.Objects;
