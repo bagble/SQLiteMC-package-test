@@ -54,9 +54,8 @@ public class slm {
      * Create a new SQLite database
      *
      * @param dbName database name
-     * @param plugin plugin
      */
-    public static void setupDB(Plugin plugin, String dbName) {
+    public static void setupDB(String dbName) {
         if (!plugin.getDataFolder().exists()) {
             plugin.getDataFolder().mkdir();
         }
