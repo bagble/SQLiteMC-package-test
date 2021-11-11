@@ -8,7 +8,7 @@ public class main extends JavaPlugin {
         slm.register(this);
         getLogger().info("SQLiteMC has been enabled!");
 
-        slm.setupDB(this, "sqlitemc-test");
+        slm.setupDB("sqlitemc-test");
 
         slm.createTable("sqlitemc-test", "HelloWorld");
 
