@@ -1,0 +1,12 @@
+# IntelliJ IDEA
+.idea/
+
+# Gradle
+.gradle/
+build/
+
+# Local Library
+libs/
+
+# Debug
+.debug/

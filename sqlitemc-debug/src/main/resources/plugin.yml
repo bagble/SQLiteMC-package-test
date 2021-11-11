@@ -1,0 +1,5 @@
+name: $pluginName
+version: $pluginVersion
+main: $pluginMain
+authors: [ Kill00 ]
+website: https://github.com/Kill00/ConfigAPI

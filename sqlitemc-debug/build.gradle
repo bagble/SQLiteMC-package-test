@@ -1,0 +1,41 @@
+dependencies {
+    implementation(project(path: ":sqlitemc-core"))
+}
+
+tasks {
+    processResources {
+        filesMatching("**/*.yml") {
+            expand(project.properties)
+        }
+    }
+
+    task createJar(type: Jar, dependsOn: classes) {
+        finalizedBy shadowJar {
+            archiveBaseName.set(project.properties.get("pluginName").toString())
+            archiveVersion.set(project.properties.get("pluginVersion").toString())
+            archiveClassifier.set("")
+            from("LICENSE", "README.MD")
+
+            doLast {
+                copy {
+                    from(archiveFile)
+                    var plugins = new File(rootDir, ".debug/plugins/")
+                    if (new File(plugins, archiveFileName.get()).exists()) into(new File(plugins, "update")) else into(plugins)
+                }
+            }
+        }
+        enabled(false)
+
+        assemble {
+            dependsOn(shadowJar)
+        }
+    }
+
+    artifacts {
+        archives(createJar)
+    }
+
+    project.delete(
+            file('build/resources')
+    )
+}
