@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"io.github.kill00.sqlitemc"},{"l":"io.github.kill00.sqlitemc.Data"}]
