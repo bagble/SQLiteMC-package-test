@@ -31,11 +31,41 @@ subprojects {
         testImplementation ('org.junit.jupiter:junit-jupiter-api:5.7.0')
         testRuntimeOnly ('org.junit.jupiter:junit-jupiter-engine:5.7.0')
     }
+
     publishing {
         publications {
             "$project.name"(MavenPublication) {
                 groupId = project.properties.get("pluginGroup").toString()
                 version = project.properties.get("pluginVersion").toString()
+
+                pom {
+                    name.set(rootProject.name)
+                    url.set("https://github.com/Kill00/${rootProject.name}")
+
+                    licenses {
+                        license {
+                            name.set("MIT License")
+                            url.set("https://opensource.org/licenses/MIT")
+                        }
+                    }
+
+                    developers {
+                        developer {
+                            id.set("kill00")
+                            name.set("Kill00")
+                            email.set("kill00@p.teamvery.dev")
+                            url.set("https://github.com/Kill00")
+                            roles.addAll("developer")
+                            timezone.set("Asia/Seoul")
+                        }
+                    }
+
+                    scm {
+                        connection.set("scm:git:git://github.com/Kill00/${rootProject.name}.git")
+                        developerConnection.set("scm:git:ssh://github.com:Kill00/${rootProject.name}.git")
+                        url.set("https://github.com/Kill00/${rootProject.name}")
+                    }
+                }
 
                 artifact(jar)
             }
