@@ -4,6 +4,7 @@ on: [ push, pull_request ]
 jobs:
   publish:
     name: "Publishing"
+    if: ${{ !contains(github.event.head_commit.message, '[Publish Skip]') }}
     runs-on: ubuntu-latest
     permissions:
       contents: read

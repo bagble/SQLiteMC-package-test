@@ -3,7 +3,7 @@
 [![Java CI with Gradle](https://github.com/bagble/SQLiteMC-package-test/actions/workflows/action.yml/badge.svg)](https://github.com/bagble/SQLiteMC-package-test/actions/workflows/action.yml) [![Publish Gradle Project](https://github.com/bagble/SQLiteMC-package-test/actions/workflows/publish.yml/badge.svg)](https://github.com/bagble/SQLiteMC-package-test/actions/workflows/publish.yml)
 ---
 ## SQLiteMC Docs
-> * JavaDocs : [Click](https://bagble.github.io/SQLiteMC/)
+> * JavaDocs : [Click](https://bagble.github.io/SQLiteMC-package-test/)
 ---
 > * ### LICENSE
 > 1. server-script - `MIT License`
