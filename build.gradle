@@ -52,7 +52,7 @@ subprojects {
 
                 pom {
                     name.set(rootProject.name)
-                    url.set("https://github.com/Kill00/${rootProject.name}")
+                    url.set("https://github.com/bagble/${rootProject.name}")
 
                     licenses {
                         license {
@@ -61,21 +61,10 @@ subprojects {
                         }
                     }
 
-                    developers {
-                        developer {
-                            id.set("kill00")
-                            name.set("Kill00")
-                            email.set("kill00@p.teamvery.dev")
-                            url.set("https://github.com/Kill00")
-                            roles.addAll("developer")
-                            timezone.set("Asia/Seoul")
-                        }
-                    }
-
                     scm {
-                        connection.set("scm:git:git://github.com/Kill00/${rootProject.name}.git")
-                        developerConnection.set("scm:git:ssh://github.com:Kill00/${rootProject.name}.git")
-                        url.set("https://github.com/Kill00/${rootProject.name}")
+                        connection.set("scm:git:git://github.com/bagble/${rootProject.name}.git")
+                        developerConnection.set("scm:git:ssh://github.com:bagble/${rootProject.name}.git")
+                        url.set("https://github.com/bagble/${rootProject.name}")
                     }
                 }
 
