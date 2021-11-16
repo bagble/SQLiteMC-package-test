@@ -3,7 +3,7 @@
 [![Java CI with Gradle](https://github.com/bagble/SQLiteMC-package-test/actions/workflows/action.yml/badge.svg)](https://github.com/bagble/SQLiteMC-package-test/actions/workflows/action.yml) [![Publish Gradle Project](https://github.com/bagble/SQLiteMC-package-test/actions/workflows/publish.yml/badge.svg)](https://github.com/bagble/SQLiteMC-package-test/actions/workflows/publish.yml)
 ---
 ## SQLiteMC Docs
-> * JavaDocs : [Click](https://kill00.github.io/SQLiteMC/)
+> * JavaDocs : [Click](https://bagble.github.io/SQLiteMC/)
 ---
 > * ### LICENSE
 > 1. server-script - `MIT License`
@@ -29,7 +29,7 @@ allprojects {
 ```
 ```groovy
 dependencies {
-    implementation 'com.github.kill00.SQLiteMC:sqlitemc-core:<Version>'
+    implementation 'io.github.kill00.SQLiteMC:sqlitemc-core:<Version>'
 }
 ```
 ---
@@ -37,14 +37,14 @@ dependencies {
 ```xml
 <repositories>
     <repository>
-        <id>jitpack.io</id>
-        <url>https://jitpack.io</url>
+        <id>github</id>
+        <url>https://maven.pkg.github.com/bagble/SQLite-package-test</url>
     </repository>
 </repositories>
 ```
 ```xml
 <dependency>
-    <groupId>com.github.kill00.SQLiteMC</groupId>
+    <groupId>io.github.kill00.SQLiteMC</groupId>
     <artifactId>sqlitemc-core</artifactId>
     <version>Version</version>
 </dependency>
