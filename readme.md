@@ -1,6 +1,6 @@
 # SQLiteMC
 
-[![Java CI with Gradle](https://github.com/Kill00/SQLiteMC/actions/workflows/action.yml/badge.svg)](https://github.com/Kill00/SQLiteMC/actions/workflows/action.yml) [![](https://jitpack.io/v/Kill00/SQLiteMC.svg)](https://jitpack.io/#Kill00/SQLiteMC)
+[![Java CI with Gradle](https://github.com/bagble/SQLiteMC-package-test/actions/workflows/action.yml/badge.svg)](https://github.com/bagble/SQLiteMC-package-test/actions/workflows/action.yml) [![Publish Gradle Project](https://github.com/bagble/SQLiteMC-package-test/actions/workflows/publish.yml/badge.svg)](https://github.com/bagble/SQLiteMC-package-test/actions/workflows/publish.yml)
 ---
 ## SQLiteMC Docs
 > * JavaDocs : [Click](https://kill00.github.io/SQLiteMC/)
@@ -21,8 +21,8 @@ allprojects {
     repositories {
         ...
         maven {
-            name = 'jitpack'
-            url = 'https://jitpack.io'
+            name = 'github'
+            url = 'https://maven.pkg.github.com/bagble/SQLite-package-test'
         }
     }
 }
