@@ -46,7 +46,7 @@ subprojects {
         }
 
         publications {
-            "$project.name"(MavenPublication) {
+            "maven"(MavenPublication) {
                 groupId = project.properties.get("pluginGroup").toString()
                 version = project.properties.get("pluginVersion").toString()
 
