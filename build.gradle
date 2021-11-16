@@ -33,6 +33,18 @@ subprojects {
     }
 
     publishing {
+        repositories {
+            maven {
+                name = "github"
+                url = "https://maven.pkg.github.com/bagble/${rootProject.name}" as Object
+
+                credentials {
+                    username = "bagble"
+                    password = System.getenv("GITHUB_TOKEN")
+                }
+            }
+        }
+
         publications {
             "$project.name"(MavenPublication) {
                 groupId = project.properties.get("pluginGroup").toString()
